@@ -25,7 +25,7 @@ const Food = () => {
     
     <>
         <div className='max-w-[1640px] mx-auto px-4 py-12'>
-            <h1 className='text-orange-600 font-bold text-4xl text-center'>To Rated Menu Items</h1>
+            <h1 className='text-orange-600 font-bold text-4xl text-center'>To Rated Foods Items</h1>
             {/* filter row */}
             <div className='flex flex-col lg:flex-row justify-between'>
                 {/* filter type */}

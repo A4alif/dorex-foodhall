@@ -1,16 +1,21 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import CardsHeadline from "./components/CardsHeadline";
-import Food from "./components/Food";
-import Hero from "./components/Hero";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import NotFound from "./components/NotFound";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <CardsHeadline />
-      <Food />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </Router>
     </>
   );
 }
